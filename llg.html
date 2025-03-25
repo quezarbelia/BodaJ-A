@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Le llaman Guerrero</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: normal;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .chord {
+            color: #ff7c39;
+            font-weight: bold;
+        }
+
+        .lyrics {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            font-size: 14px;
+            margin-top: 20px;
+            color: #bbb;
+        }
+
+        .Btn-Container {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            width: 170px;
+            height: fit-content;
+            background-color: #1d2129;
+            border-radius: 40px;
+            box-shadow: 0px 5px 10px #bebebe;
+            justify-content: space-between;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        .icon-Container {
+            width: 45px;
+            height: 45px;
+            background-color: #f59aff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 3px solid #1d2129;
+        }
+
+        .text {
+            width: calc(170px - 45px);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1em;
+            letter-spacing: 1.2px;
+        }
+
+        .icon-Container svg {
+            transition-duration: 1.5s;
+        }
+
+        .Btn-Container:hover .icon-Container svg {
+            transition-duration: 1.5s;
+            animation: arrow 1s linear infinite;
+        }
+
+        @keyframes arrow {
+            0% {
+                opacity: 0;
+                margin-left: 0px;
+            }
+            100% {
+                opacity: 1;
+                margin-left: 10px;
+            }
+        }
+
+        .Home-Btn {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            background: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 5px 10px #bebebe;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Le Llaman Guerrero</h1>
+    <p>Tono: Em</p>
+    <br>
+    <p class="lyrics"><span class="chord">Em</span><br>//Cuentan de un Dios que hace maravillas</p>
+    <p class="lyrics"><span class="chord">D</span><br>Dándole poder a su pueblo</p>
+    <p class="lyrics"><span class="chord">Em</span> <span class="chord">C</span><br>Gracias a Él conquistaron reinos</p>
+    <p class="lyrics"><span class="chord">D</span> <span class="chord">Em</span><br>Tomaron ciudades en Su nombre//</p>
+    <br>
+    <p class="lyrics"><span class="chord">Em</span> <span class="chord">C</span><br>//Fue cantando, otras veces gritando</p>
+    <p class="lyrics"><span class="chord">D</span> <span class="chord">Em</span><br>Acompañado de sonido de bocina</p>
+    <p class="lyrics"><span class="chord">C</span> <span class="chord">D</span> <span class="chord">Em</span> <span class="chord">C</span><br>Fue cantando, otras veces gritando</p>
+    <p class="lyrics"><span class="chord">D</span> <span class="chord">Em</span><br>A viva voz a Su Dios//</p>
+    <br>
+    <p class="lyrics"><span class="chord">Em</span> <span class="chord">C</span><br>//Columna de fuego, nube en el desierto</p>
+    <p class="lyrics"><span class="chord">D</span> <span class="chord">Em</span><br>Peña de Horeb para todo el sediento//</p>
+    <br>
+    <p class="lyrics"><span class="chord">Em</span> <span class="chord">C</span><br>//Le llaman "Guerrero", le llaman "Guerrero"</p>
+    <p class="lyrics"><span class="chord">D</span> <span class="chord">Em</span><br>Jehová de los Ejércitos//</p>
+    <br><br><br>
+    <p class="footer">@gabriel_qva</p>
+    <br>
+    <button class="Home-Btn" onclick="location.href='BODAJ&A_INICIO.html'">
+        <span>Home</span>
+    </button>
+
+    <button class="Btn-Container" onclick="location.href='bd.html'">
+        <span class="text">Siguiente</span>
+        <span class="icon-Container">
+            <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="1.61321" cy="1.61321" r="1.5" fill="black"></circle>
+                <circle cx="5.73583" cy="1.61321" r="1.5" fill="black"></circle>
+                <circle cx="5.73583" cy="5.5566" r="1.5" fill="black"></circle>
+                <circle cx="9.85851" cy="5.5566" r="1.5" fill="black"></circle>
+                <circle cx="9.85851" cy="9.5" r="1.5" fill="black"></circle>
+                <circle cx="13.9811" cy="9.5" r="1.5" fill="black"></circle>
+            </svg>
+        </span>
+    </button>
+</body>
+</html>
